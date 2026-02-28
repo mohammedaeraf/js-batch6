@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Intro</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+      h1 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      p {
+        font-style: italic;
+        color: blue;
+      }
+    </style>
+    <script>
+      function changeHeadingColor() {
+        let h = document.getElementById("mainHeading"); // getting reference of heading
+        h.style.color = "red";
+        h.style.textAlign = "center";
+        h.style.textShadow = "3px 3px 5px pink";
+      }
+
+      function changePara() {
+        let p1 = document.getElementById("para1");
+        p1.style.color = "brown";
+        p1.style.border = "1px solid gray";
+        p1.style.padding = "8px";
+        p1.style.backgroundColor = "beige";
+        p1.style.borderRadius = "5px";
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="mainHeading">Hello, JavaScript</h1>
+    <p id="para1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, saepe!
+      Perspiciatis architecto cupiditate, distinctio odio beatae repellat
+      recusandae tenetur quasi optio sapiente rem provident qui atque ipsa ipsum
+      hic culpa!
+    </p>
+    <button onclick="changeHeadingColor()">Change Heading</button>
+    <button onclick="changePara()">Change Para</button>
+  </body>
+</html>
