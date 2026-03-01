@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Img Src</title>
+    <script>
+      function bulbOn() {
+        let bulbImg = document.getElementById("bulbImg");
+        bulbImg.src = "img/bulb-on.png";
+      }
+
+      function bulbOff() {
+        let bulbImg = document.getElementById("bulbImg");
+        bulbImg.src = "img/bulb-off.png";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Bulb On/Off Example</h2>
+    <img
+      id="bulbImg"
+      src="img/bulb-off.png"
+      alt="Bulb"
+      width="200"
+      onmouseover="bulbOn()"
+      onmouseout="bulbOff()"
+    />
+    <br /><br />
+    <button onclick="bulbOn()">On</button>
+    <button onclick="bulbOff()">Off</button>
+  </body>
+</html>
