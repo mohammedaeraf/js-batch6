@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function toggleImage() {
+            let img = document.getElementById("myImg");
+            if (img.src.includes("bulb-on.png")) {
+                img.src = "img/bulb-off.png";
+            }
+            else {
+                img.src = "img/bulb-on.png";
+            }
+
+        }
+
+        function on() {
+            document.getElementById("myImg").src = "img/bulb-on.png";
+        }
+
+        function off() {
+            document.getElementById("myImg").src = "img/bulb-off.png";
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Click Button to Change Image</h2>
+
+    <img id="myImg" src="img/bulb-off.png" alt="Original Image" width="200" onmouseover="on()" onmouseout="off()" />
+
+    <br /><br />
+
+    <button onclick="toggleImage()">Bulb On / Off</button>
+</body>
+
+</html>
