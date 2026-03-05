@@ -1,5 +1,5 @@
 // to assign a grade based on the percentage score
-let percent = 25;
+let percent = 63;
 let grade = "";
 
 if (percent >= 80) {
