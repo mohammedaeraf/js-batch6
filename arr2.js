@@ -5,24 +5,24 @@ let courses2 = ["digital-marketing", "AI Tools"];
 // console.log(courses1.includes("ChatGPT"));
 
 let allCourses = courses1.concat(courses2);
-// console.log(allCourses);
+console.log(allCourses);
 
 let numbers = [1, 2, 3, 4, 5];
 // insert element in between
-numbers.splice(4, 0, 10);
+numbers.splice(3, 0, 100);
 console.log(numbers);
 
 // for-in loop
-for (let i in courses1) {
-  // console.log(courses1[i]);
+for (let i in allCourses) {
+  console.log(allCourses[i]);
 }
 
 // for-of loop
-for (let course of courses1) {
+for (let course of allCourses) {
   console.log(course);
 }
 
 // forEach loop
 let total = 0;
-numbers.forEach( n => total += n );
+numbers.forEach((n) => (total += n));
 console.log(`Total = ${total}`);

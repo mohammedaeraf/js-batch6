@@ -1,8 +1,9 @@
+let age = 25;
 let fruits = ["apple", "watermelon", "kiwi"];
 console.log(fruits);
 // console.log(fruits[2]);
 
-fruits.push("banana", "mango");
+fruits.push("banana", "mango", "orange");  // adds an element at the end
 console.log(fruits);
 
 let lastFruit = fruits.pop();  // removes the last element
